@@ -1,17 +1,15 @@
 import requests
-from API.library.support.data import reciever
+from API.library.support.data import tr
 
-def GetToken():
+
+def get_token(user_name, password):
     body = {
-        'userName': '',
-        'password': ''
+        'userName': user_name,
+        'password': password
     }
-
-    url = reciever
-
+    url = tr
     token = requests.post(
         url,
-        json = body
+        json=body
     )
-
     return 'Bearer ' + token.text
