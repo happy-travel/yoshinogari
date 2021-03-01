@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 .idea/
 .DS_Store
+/UI/chromedriver
+/UI/TestsUI/__init__.py
